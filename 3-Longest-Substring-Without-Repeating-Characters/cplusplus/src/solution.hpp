@@ -43,14 +43,12 @@
 // };
 
 #include <string>
-#include <vector>
 #include <array>
 using namespace std;
 
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-        // vector<int> charIndex(256, -1);
         array<int, 256> charIndex;
         charIndex.fill(-1);
         int start = 0;

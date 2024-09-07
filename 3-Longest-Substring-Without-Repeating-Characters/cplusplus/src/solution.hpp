@@ -49,7 +49,7 @@ using namespace std;
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-        array<int, 256> charIndex;
+        array<int, 128> charIndex;
         charIndex.fill(-1);
         int start = 0;
         int maxLen = 0;

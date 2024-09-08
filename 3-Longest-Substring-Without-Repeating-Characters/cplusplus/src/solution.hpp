@@ -55,11 +55,16 @@ public:
         int maxLen = 0;
         for (int i = 0; i < s.size(); i++) {
             if (charIndex[int(s[i])] >= start) {
+                maxLen = max(maxLen, i - start);
                 start = charIndex[int(s[i])] + 1;
             }
             charIndex[int(s[i])] = i;
-            maxLen = max(maxLen, i - start + 1);
         }
+
+        if (s.size() - start > maxLen) {
+            maxLen = s.size() - start;
+        }
+        
         return maxLen;
     }
 };

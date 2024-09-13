@@ -17,8 +17,8 @@ public:
             return targetSum == 0;
         }
 
-        if (root->left != nullptr && hasPathSum(root->left, targetSum)) return true;
-        if (root->right != nullptr && hasPathSum(root->right, targetSum)) return true;
+        if (hasPathSum(root->left, targetSum)) return true;
+        if (hasPathSum(root->right, targetSum)) return true;
         return false;
     }
 };

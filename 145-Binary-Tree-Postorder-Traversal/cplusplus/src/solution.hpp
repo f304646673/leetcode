@@ -12,7 +12,7 @@ struct TreeNode {
 
 class Solution {
 public:
-    vector<int> preorderTraversal(TreeNode* root) {
+    vector<int> postorderTraversal(TreeNode* root) {
         vector<int> result;
         postorderTraversalDfs(root, result);
         return result;    
@@ -21,8 +21,8 @@ public:
 private:
     void postorderTraversalDfs(TreeNode* root, vector<int>& result) {
         if (root == nullptr) return;
-        result.push_back(root->val);
         postorderTraversalDfs(root->left, result);
         postorderTraversalDfs(root->right, result);
+        result.push_back(root->val);
     }
 };

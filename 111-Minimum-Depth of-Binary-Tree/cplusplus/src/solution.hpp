@@ -39,10 +39,9 @@ private:
         return currentMinDepth;
     }
 
-// private:
-//     int minDepthDfs(TreeNode* root) {
-//         if (root == nullptr) return INT_MAX;
-//         if (root->left == nullptr && root->right == nullptr) return 1;
-//         return 1 + min(minDepthDfs(root->left), minDepthDfs(root->right));
-//     }
+    // int minDepthDfs(TreeNode* root) {
+    //     if (root == nullptr) return INT_MAX;
+    //     if (root->left == nullptr && root->right == nullptr) return 1;
+    //     return 1 + min(minDepthDfs(root->left), minDepthDfs(root->right));
+    // }
 };

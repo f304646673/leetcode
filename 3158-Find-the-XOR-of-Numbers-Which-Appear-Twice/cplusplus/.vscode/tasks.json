@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build test",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "test/test.cpp",
+                "-o",
+                "build/debug",
+                "-lgtest",
+                "-lgtest_main",
+                "-pthread",
+                "-I",
+                "src"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}

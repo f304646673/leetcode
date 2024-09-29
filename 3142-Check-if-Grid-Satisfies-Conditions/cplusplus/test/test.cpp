@@ -1,7 +1,7 @@
 #include "../src/solution.hpp"
 #include <gtest/gtest.h>
 
-TEST(Solution, test1) {
-    Solution s;
-    
+TEST(Solution, Test1) {
+    Solution solution;
+    vector<int> v1 = {1,0,2};
 }
